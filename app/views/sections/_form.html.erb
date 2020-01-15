@@ -1,0 +1,30 @@
+
+
+    <table summary="Section form fields">
+      <tr>
+        <th>Name</th>
+        <td><%= f.text_field(:name) %></td>
+      </tr>
+      <tr>
+        <th>Position</th>
+        <td><%= f.select(:position, 1..@section_count) %></td>
+      </tr>
+      <tr>
+        <th>Visible</th>
+        <td><%= f.check_box(:visible) %></td>
+      </tr>
+      <tr>
+        <th>Page</th>
+        <td><%= f.select(:page_id, Page.all.map {|p| [p.name, p.id]}) %></td>
+      </tr>
+      <tr>
+        <th>Content Type</th>
+        <td><%= f.select(:content_type, ['HTML', 'Text'])%></td>
+      </tr>
+      <tr>
+        <th>Content</th>
+        <td><%= f.text_area(:content) %></td>
+      </tr>
+    </table>
+
+
