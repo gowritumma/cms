@@ -2,6 +2,7 @@
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
+This is a simple Content Management Application. You can create subjects and the corresponding pages in it. Pages will have different content.
 
 Things you may want to cover:
 
