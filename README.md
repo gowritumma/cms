@@ -24,6 +24,9 @@ Database names : cms_development/cms_test/cms_production
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+  1. rails db:create
+  2. rails db:schema:load
+  3. rails db:seed
 
 * rails db:migrate will create the database tables
  Table names:
